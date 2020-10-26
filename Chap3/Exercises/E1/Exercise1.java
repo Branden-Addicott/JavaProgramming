@@ -3,4 +3,55 @@
 //Created on: 10/26/2020;
 
 
-import java.util.*, java.io.*;
+import java.util.*;
+import java.io.*;
+
+public class Exercise1 {
+	static public void main(String[] args)
+	throws FileNotFoundException
+	{
+		Scanner infile = new Scanner(new FileReader("inData.txt"));
+		PrintWriter outFile = new PrintWriter("outData.dat");
+
+		double length, width, area, parameter, radius, cirArea, circum, start, rate, end;
+		String fName, lName;
+		int age;
+		char a,b;
+
+		length = infile.nextDouble();
+		width = infile.nextDouble();
+		radius = infile.nextDouble();
+		fName = infile.next();
+		lName = infile.next();
+		age = infile.nextInt();
+		start = infile.nextDouble();
+		rate = infile.nextDouble();
+		a = infile.next().charAt(0);
+		
+		area = length * width;
+		parameter = 2 * (length + width);
+		cirArea = Math.PI * Math.pow(radius,2);
+		circum = 2 * Math.PI * radius;
+		end = start * (1 + (rate / 100));
+		b = (char) (a+1);	
+		
+		System.out.println();
+		System.out.println(String.format("Retangle:%nLength = %.2f, width = %.2f, area = %.2f, parameter = %.2f"
+					,length, width, area, parameter));
+		
+		System.out.println();
+		System.out.println(String.format("Circle:%nRadius = %.2f, area = %.2f, circumference = %.2f"
+					,radius,cirArea,circum));
+		
+		System.out.println();
+		System.out.println(String.format("Name: %s %s, age: %d",fName,lName,age));
+		System.out.println(String.format("Beginning balance = $%.2f, interest rate = %.2f", start,rate));
+		System.out.println(String.format("Balance at the end of the month = $%.2f",end));
+		
+		System.out.println();
+		System.out.println(String.format("The character that comes after A in the ASCII set is %c",b));
+
+	}
+}
+		
+
