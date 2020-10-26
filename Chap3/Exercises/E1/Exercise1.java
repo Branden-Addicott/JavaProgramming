@@ -35,7 +35,6 @@ public class Exercise1 {
 		end = start * (1 + (rate / 100)/12);
 		b = (char) (a+1);	
 		
-		outFile.println();
 		outFile.println(String.format("Retangle:%nLength = %.2f, width = %.2f, area = %.2f, parameter = %.2f"
 					,length, width, area, parameter));
 		
