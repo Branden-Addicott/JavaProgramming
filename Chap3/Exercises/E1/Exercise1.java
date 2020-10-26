@@ -32,7 +32,7 @@ public class Exercise1 {
 		parameter = 2 * (length + width);
 		cirArea = Math.PI * Math.pow(radius,2);
 		circum = 2 * Math.PI * radius;
-		end = start * (1 + (rate / 100));
+		end = start * (1 + (rate / 100)/12);
 		b = (char) (a+1);	
 		
 		outFile.println();
