@@ -1,0 +1,8 @@
+*****************************************************************
+* Explain what what changed in Code to fix logical errors       *
+* Created by: Branden Addicott                                  *
+* Created on: 10/27/2020                                        *
+*****************************************************************
+
+
+The logica error is that the current ratios are in terms of per dollar. This can be seen in the calculations of bagSize / cost and area / cost. To correct these logical errors, I chaged the formulas to cost / bagSize and cost / area. 
